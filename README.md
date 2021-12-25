@@ -13,7 +13,12 @@ The goal of this lab is to get you familiar with the ROS 2 workflow inside conta
 ## II. Docker
 First, install Docker on your system following the instructions here: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/). When you're working with simulation only, we'll make sure the assignment can be completed on all three platforms. When working on the car, everything will be in Linux. Note that you should also complete the post installation steps on some platforms, or you'll need to call docker with ```sudo```.
 
-Next, start a container with a bind mount to your workspace directory on your host system. We first create the workspace directory on your host system by: ```mkdir -p lab0_ws/src```. Next start a ROS 2 container by:
+Next, start a container with a bind mount to your workspace directory on your host system by:
+
+```bash
+docker run -it -v <absolute_path_to>/lab0_ws/src/:/lab0_ws/src/ ros:foxy
+````
+This will create a workspace directory on the host at ```<absolute_path_to>/lab0_ws/src```
 
 ## III: ROS 2 in Docker
 
