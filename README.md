@@ -67,7 +67,12 @@ The second node will be named `relay` and needs to meet these criteria:
 ## VI: Creating a launch file and a parameter file
 **Deliverable 3**: create a launch file that launchs both of the nodes we've created.
 
-## VII: ROS 2 commands
+## VII: Tagging and pushing your image to Docker Hub
+You can use Docker Hub to easily share container images with your team. You might find it useful in the future when you're working in a team. For a quickstart guide on how to tag and push your images, see [https://docs.docker.com/docker-hub/](https://docs.docker.com/docker-hub/).
+
+**Deliverable 4**: register for a Docker ID and create a public repo on Docker Hub named `f1tenth_lab0`. Tag the container that you currently have that includes the workspace, packages, and nodes created as `latest` and push to Docker Hub.
+
+## VIII: ROS 2 commands
 
 After you've finished all the deliverables, launch the two nodes and test out these ROS 2 commands:
 ```bash
@@ -79,6 +84,14 @@ ros2 node info talker
 ros2 node info relay
 ```
 
-## VIII: Deliverables and Submission
+## IX: Deliverables and Submission
+In addition to the three deliverables described in this document, fill in the answers to the questions listed in **`SUBMISSION.md`**.
 
-## IX: Grading Rubric
+We'll be using Github classroom throughout the semester to manage submissions for lab assignments. After you're finished, directly commit and push to the repo Github classroom created for you.
+
+## X: Grading Rubric
+- Using ROS 2 inside a Docker container and pushing resulting image to Docker Hub: **20** Points
+- Correctly creating the package: **20** Points
+- Correctly creating the nodes: **20** Points
+- Correctly creating the launch file: **20** Points
+- Written questions: **5** Points each

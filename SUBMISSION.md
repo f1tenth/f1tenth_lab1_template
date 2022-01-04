@@ -1,5 +1,7 @@
 # Lab 0: Docker and ROS 2
-## Name: (FILL ME IN)
+
+## Docker Hub ID
+(FILL ME IN)
 
 ## Written Questions
 
