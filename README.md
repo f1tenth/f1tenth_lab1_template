@@ -25,10 +25,10 @@ First, install Docker on your system following the instructions here: [https://d
 Next, start a container with a bind mount to your workspace directory on your host system inside this repo by:
 
 ```bash
-docker run -it -v <absolute_path_to_this_repo>/lab0_ws/src/:/lab1_ws/src/ ros:foxy
+docker run -it -v <absolute_path_to_this_repo>/lab1_ws/src/:/lab1_ws/src/ ros:foxy
 ```
 
-This will create a workspace directory on the host at `<absolute_path_to_this_repo>/lab0_ws/src`.
+This will create a workspace directory on the host at `<absolute_path_to_this_repo>/lab1_ws/src`.
 
 `tmux` is recommended when you're working inside a container. It could be installed in the container via: `apt update && apt install tmux`. `tmux` allows you to have multiple `bash` session in the same terminal window. This will be very convenient working inside containers. A quick reference on how to use tmux can be found [here](https://tmuxcheatsheet.com/).  You can start a session with `tmux`. Then you can call different `tmux` commands by pressing `ctrl+B` first and then the corresponding key. For example, to add a new window, press `ctrl+B` first and release and press `c` to create a new window. You can also move around with `ctrl+B` then `n` or `p`.
 
@@ -48,7 +48,7 @@ You should see two topics listed:
 If you need multiple terminals inside the container, use `tmux`.
 
 ## IV: Creating a Package
-**Deliverable 1**: create a package named `lab0_pkg` in the workspace we created. The package needs to meet these criteria:
+**Deliverable 1**: create a package named `lab1_pkg` in the workspace we created. The package needs to meet these criteria:
 - The package supports both `Python` and `C++`.
 - The package needs to have the `ackermann_msgs` dependency. (`rosdep` will be used to test this).
 
@@ -70,7 +70,7 @@ The second node will be named `relay` and needs to meet these criteria:
 ## VII: Tagging and pushing your image to Docker Hub
 You can use Docker Hub to easily share container images with your team. You might find it useful in the future when you're working in a team. For a quickstart guide on how to tag and push your images, see [https://docs.docker.com/docker-hub/](https://docs.docker.com/docker-hub/).
 
-**Deliverable 4**: register for a Docker ID and create a public repo on Docker Hub named `f1tenth_lab0`. Tag the container that you currently have that includes the workspace, packages, and nodes created as `latest` and push to Docker Hub.
+**Deliverable 4**: register for a Docker ID and create a public repo on Docker Hub named `f1tenth_lab1`. Tag the container that you currently have that includes the workspace, packages, and nodes created as `latest` and push to Docker Hub.
 
 ## VIII: ROS 2 commands
 
