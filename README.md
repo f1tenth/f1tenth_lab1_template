@@ -1,4 +1,4 @@
-# Lab 0: Docker and ROS 2
+# Lab 1: Docker and ROS 2
 
 ## Learning Goals
 
@@ -25,7 +25,7 @@ First, install Docker on your system following the instructions here: [https://d
 Next, start a container with a bind mount to your workspace directory on your host system inside this repo by:
 
 ```bash
-docker run -it -v <absolute_path_to_this_repo>/lab0_ws/src/:/lab0_ws/src/ ros:foxy
+docker run -it -v <absolute_path_to_this_repo>/lab0_ws/src/:/lab1_ws/src/ ros:foxy
 ```
 
 This will create a workspace directory on the host at `<absolute_path_to_this_repo>/lab0_ws/src`.
