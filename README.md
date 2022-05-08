@@ -53,6 +53,7 @@ If you need multiple terminals inside the container, use `tmux`.
 - The package needs to have the `ackermann_msgs` dependency.
 - Both of these can be done by declaring the correct dependencies in `package.xml`.
 - If declared properly the depencies could be installed using `rosdep`.
+- Your package folder should be neat. You shouldn't have multiple 'src' folders or unnecessary 'install' or 'build' folders.
 
 ## V: Creating nodes with publishers and subscribers
 **Deliverable 2**: create two nodes in the package we just created. You can use either `Python` or `C++` for these nodes.
