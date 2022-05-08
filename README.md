@@ -64,7 +64,7 @@ The first node will be named `talker.cpp` or `talker.py` and needs to meet these
 - `talker` publishes as fast as possible.
 - To test node, set the two ROS parameters through command line, a launch file, or a yaml file.
 
-The second node will be named `relay.cpp` or 'relay.py' and needs to meet these criteria:
+The second node will be named `relay.cpp` or `relay.py` and needs to meet these criteria:
 - `relay` subscribes to the `drive` topic.
 - In the subscriber callback, take the speed and steering angle from the incoming message, multiply both by 3, and publish the new values via another `AckermannDriveStamped` message to a topic named `drive_relay`.
 
