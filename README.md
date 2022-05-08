@@ -57,18 +57,18 @@ If you need multiple terminals inside the container, use `tmux`.
 ## V: Creating nodes with publishers and subscribers
 **Deliverable 2**: create two nodes in the package we just created. You can use either `Python` or `C++` for these nodes.
 
-The first node will be named `talker` and needs to meet these criteria:
+The first node will be named `talker.cpp` or `talker.py` and needs to meet these criteria:
 - `talker` listens to two ROS parameters `v` and `d`.
 - `talker` publishes an `AckermannDriveStamped` message with the `speed` field equal to the `v` parameter and `steering_angle` field equal to the `d` parameter, and to a topic named `drive`.
 - `talker` publishes as fast as possible.
 - To test node, set the two ROS parameters through command line, a launch file, or a yaml file.
 
-The second node will be named `relay` and needs to meet these criteria:
+The second node will be named `relay.cpp` or 'relay.py' and needs to meet these criteria:
 - `relay` subscribes to the `drive` topic.
 - In the subscriber callback, take the speed and steering angle from the incoming message, multiply both by 3, and publish the new values via another `AckermannDriveStamped` message to a topic named `drive_relay`.
 
 ## VI: Creating a launch file and a parameter file
-**Deliverable 3**: create a launch file that launches both of the nodes we've created. If you want, you could also set the parameter for the `talker` node in this launch file.
+**Deliverable 3**: create a launch file `lab1_launch.py` that launches both of the nodes we've created. If you want, you could also set the parameter for the `talker` node in this launch file.
 
 ## VII: Tagging and pushing your image to Docker Hub
 You can use Docker Hub to easily share container images with your team. You might find it useful in the future when you're working in a team. For a quickstart guide on how to tag and push your images, see [https://docs.docker.com/docker-hub/](https://docs.docker.com/docker-hub/).
