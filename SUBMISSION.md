@@ -1,7 +1,4 @@
-# Lab 0: Docker and ROS 2
-
-## Docker Hub ID
-(FILL ME IN)
+# Lab 1: Intro to ROS 2
 
 ## Written Questions
 
@@ -16,7 +13,3 @@ Answer: (FILL ME IN)
 ### Q3: Do you have to call ```colcon build``` again after you've changed a launch file in your package? (Hint: consider two cases: calling ```ros2 launch``` in the directory where the launch file is, and calling it when the launch file is installed with the package.)
 
 Answer: (FILL ME IN)
-
-### Q4 (optional): While completing this lab, are there any parts of the tutorial and lab instruction that could be improved?
-
-Anwer: (FILL ME IN)
