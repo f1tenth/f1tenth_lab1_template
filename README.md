@@ -8,7 +8,7 @@
 - Creating launch files
 
 ## Before you start
-It's highly recommended to install Ubuntu natively on your machine for developement in simulation. However, if it's impossible for you to do so, you can still use the simulation inside Docker containers. In the following instructions, if you have Ubuntu installed natively, ignore directions for using Docker.
+It's highly recommended to install Ubuntu natively on your machine or in a virtual machine for developement in simulation. However, if it's impossible for you to do so, you can still use the simulation inside Docker containers. In the following instructions, if you have Ubuntu installed natively, ignore directions for using Docker.
 
 ## 1. Overview
 
@@ -26,8 +26,8 @@ Install ROS 2 following the instructions here: [https://docs.ros.org/en/humble/I
 
 Next, create a workspace:
 ```bash
-mkdir -p ~/lab1_ws/src
-cd lab1_ws
+mkdir -p ~/roboracer_ws/src
+cd roboracer_ws
 colcon build
 ```
 Move on to *Section 3* once you're done.
