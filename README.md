@@ -20,7 +20,7 @@ In this lab, it'll be helpful to read these tutorials if you're stuck:
 
 [https://roboticsbackend.com/category/ros2/](https://roboticsbackend.com/category/ros2/)
 
-## 2.1 Getting ready **(Native Ubuntu)**
+## 2 Getting ready **(Native Ubuntu)**
 
 Install ROS 2 following the instructions here: [https://docs.ros.org/en/humble/Installation.html](https://docs.ros.org/en/humble/Installation.html).
 
