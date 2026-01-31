@@ -77,11 +77,11 @@ The second node will be named `relay.cpp` or `relay.py` and needs to meet these 
 After you've finished all the deliverables, launch the two nodes and test out these ROS 2 commands:
 ```bash
 ros2 topic list
-ros2 topic info drive
-ros2 topic echo drive
+ros2 topic info /drive
+ros2 topic echo /drive
 ros2 node list
-ros2 node info talker
-ros2 node info relay
+ros2 node info /talker
+ros2 node info /relay
 ```
 
 ## 8: Deliverables and Submission
