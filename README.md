@@ -10,6 +10,8 @@
 ## Before you start
 It's highly recommended to install Ubuntu natively on your machine or in a virtual machine for development in simulation. However, if you can not install Ubuntu, you can still use the simulation inside Docker containers. For the following instructions, if you have Ubuntu installed natively, ignore the directions for using Docker.
 
+Each commit you push to this repo is considered a submission. You have unlimited submissions before the deadline. For a template on what your submission is expected to look like, please check out this [template subission](https://github.com/AhmadAmine998/roboracer-class-submission-template).
+
 ## 1. Overview
 
 The goal of this lab is to get you familiar with the ROS 2 workflow. You'll have the option to complete the coding segment of this assignment in either Python or C++. However, we highly recommend trying out both, as this will be the easiest assignment to get started with a new language. The workflow in these two languages is slightly different in ROS2, and it's beneficial to understand both.
