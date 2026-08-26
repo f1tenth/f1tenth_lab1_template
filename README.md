@@ -16,13 +16,13 @@ The goal of this lab is to get you familiar with the ROS 2 workflow. You'll have
 
 In this lab, it'll be helpful to read these tutorials if you're stuck:
 
-[https://docs.ros.org/en/humble/Tutorials.html](https://docs.ros.org/en/humble/Tutorials.html)
+[https://docs.ros.org/en/jazzy/Tutorials.html](https://docs.ros.org/en/jazzy/Tutorials.html)
 
 [https://roboticsbackend.com/category/ros2/](https://roboticsbackend.com/category/ros2/)
 
 ## 2 Getting ready **(Native Ubuntu)**
 
-Install ROS 2 following the instructions here: [https://docs.ros.org/en/humble/Installation.html](https://docs.ros.org/en/humble/Installation.html).
+Install ROS 2 following the instructions here: [https://docs.ros.org/en/jazzy/Installation.html](https://docs.ros.org/en/jazzy/Installation.html).
 
 Next, create a workspace:
 ```bash
@@ -37,7 +37,7 @@ Move on to *Section 3* once you're done.
 Now that we have access to a ROS 2 environment, let's test out the basic ROS 2 commands. In the terminal, run:
 
 ```bash
-source /opt/ros/humble/setup.bash
+source /opt/ros/jazzy/setup.bash
 ros2 topic list
 ```
 You should see two topics listed:
