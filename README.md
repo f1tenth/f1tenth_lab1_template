@@ -89,7 +89,24 @@ ros2 node info /relay
 ## 8: Deliverables and Submission
 In addition to the three deliverables described in this document, fill in the answers to the questions listed in **`SUBMISSION.md`**.
 
-We'll be using GitHub Classroom throughout the semester to manage submissions for lab assignments. After you're finished, directly commit and push to the GitHub Classroom repo created for you.
+We'll be using Classroom 50 throughout the semester to manage submissions for lab assignments. Commit and push your work to the repo created for you as often as you like — a plain push does **not** submit anything. When you're ready to submit, push a tag named `submission`:
+
+```bash
+git push                            # your commits
+git tag submission
+git push origin submission          # this triggers the autograder
+```
+
+The autograder builds your package and checks the deliverables, then posts your score as a **Release** on your repo (check the Releases page or the commit's status check a few minutes after you tag). To submit again after more work, move the tag to your new commit:
+
+```bash
+git tag -f submission
+git push --force origin submission
+```
+
+Every submission is recorded separately; your latest one is the one that counts.
+
+**The autograder finds your work by name.** Use exactly the names the deliverables specify — package `lab1_pkg`, nodes `talker` and `relay`, topics `drive` and `drive_relay`, launch file `lab1_launch.py` — or the grader (and the TAs) can't find your work.
 
 ## 9: Grading Rubric
 - Correctly creating the package: **25** Points
