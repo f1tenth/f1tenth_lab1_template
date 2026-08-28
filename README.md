@@ -10,7 +10,23 @@
 ## Before you start
 It's highly recommended to install Ubuntu natively on your machine or in a virtual machine for development in simulation. However, if you can not install Ubuntu, you can still use the simulation inside Docker containers. For the following instructions, if you have Ubuntu installed natively, ignore the directions for using Docker.
 
-You may submit as many times as you like before the deadline — a submission is a push of the `submission` tag, not a plain commit push (see Section 8). For a template of what your submission is expected to look like, please check out this [template submission](https://github.com/AhmadAmine998/roboracer-class-submission-template).
+We'll be using Classroom 50 throughout the semester to manage submissions for lab assignments. You can commit and push your work as often as you need, but a plain push does **not** count as a submission. When you're ready to submit, you need to push a tag named `submission`:
+
+```bash
+git push                            # your commits
+git tag submission
+git push origin submission          # this triggers the autograder
+```
+
+The autograder builds your package and checks the deliverables, then posts your score as a **Release** on your repo (check the Releases page or the commit's status check a few minutes after you tag). To resubmit, move the tag to a new commit:
+
+```bash
+git tag -f submission
+git push --force origin submission
+```
+The last ``submission`` push before the deadline is counted as your final submission and its grade will be your lab's grade.
+
+**The autograder finds your work by name.** You should use the names the deliverables specify: package `lab1_pkg`, nodes `talker` and `relay`, topics `drive` and `drive_relay`, and launch file `lab1_launch.py`. Otherwise, the autograder will not be able to grade your work and your submission may get the wrong grade. 
 
 ## 1. Overview
 
@@ -88,25 +104,6 @@ ros2 node info /relay
 
 ## 8: Deliverables and Submission
 In addition to the three deliverables described in this document, fill in the answers to the questions listed in **`SUBMISSION.md`**.
-
-We'll be using Classroom 50 throughout the semester to manage submissions for lab assignments. Commit and push your work to the repo created for you as often as you like — a plain push does **not** submit anything. When you're ready to submit, push a tag named `submission`:
-
-```bash
-git push                            # your commits
-git tag submission
-git push origin submission          # this triggers the autograder
-```
-
-The autograder builds your package and checks the deliverables, then posts your score as a **Release** on your repo (check the Releases page or the commit's status check a few minutes after you tag). To submit again after more work, move the tag to your new commit:
-
-```bash
-git tag -f submission
-git push --force origin submission
-```
-
-Every submission is recorded separately; your latest one is the one that counts.
-
-**The autograder finds your work by name.** Use exactly the names the deliverables specify — package `lab1_pkg`, nodes `talker` and `relay`, topics `drive` and `drive_relay`, launch file `lab1_launch.py` — or the grader (and the TAs) can't find your work.
 
 ## 9: Grading Rubric
 - Correctly creating the package: **25** Points
