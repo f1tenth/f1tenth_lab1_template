@@ -28,6 +28,8 @@ The last ``submission`` push before the deadline is counted as your final submis
 
 **The autograder finds your work by name.** You should use the names the deliverables specify: package `lab1_pkg`, nodes `talker` and `relay`, topics `drive` and `drive_relay`, and launch file `lab1_launch.py`. Otherwise, the autograder will not be able to grade your work and your submission may get the wrong grade. 
 
+For a template of what your submission is expected to look like, please check out this [template submission](https://github.com/AhmadAmine998/roboracer-class-submission-template).
+
 ## 1. Overview
 
 The goal of this lab is to get you familiar with the ROS 2 workflow. You'll have the option to complete the coding segment of this assignment in either Python or C++. However, we highly recommend trying out both, as this will be the easiest assignment to get started with a new language. The workflow in these two languages is slightly different in ROS2, and it's beneficial to understand both.
