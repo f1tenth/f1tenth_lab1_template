@@ -10,7 +10,7 @@
 ## Before you start
 It's highly recommended to install Ubuntu natively on your machine or in a virtual machine for development in simulation. However, if you can not install Ubuntu, you can still use the simulation inside Docker containers. For the following instructions, if you have Ubuntu installed natively, ignore the directions for using Docker.
 
-Each commit you push to this repo is considered a submission. You have unlimited submissions before the deadline. For a template on what your submission is expected to look like, please check out this [template subission](https://github.com/AhmadAmine998/roboracer-class-submission-template).
+You may submit as many times as you like before the deadline — a submission is a push of the `submission` tag, not a plain commit push (see Section 8). For a template of what your submission is expected to look like, please check out this [template submission](https://github.com/AhmadAmine998/roboracer-class-submission-template).
 
 ## 1. Overview
 
