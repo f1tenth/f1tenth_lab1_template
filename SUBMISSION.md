@@ -2,7 +2,7 @@
 
 ## Written Questions
 
-### Q1: During this assignment, you've probably ran these two following commands at some point: ```source /opt/ros/foxy/setup.bash``` and ```source install/local_setup.bash```. Functionally what is the difference between the two?
+### Q1: During this assignment, you've probably ran these two following commands at some point: ```source /opt/ros/jazzy/setup.bash``` and ```source install/local_setup.bash```. Functionally what is the difference between the two?
 
 Answer: (FILL ME IN)
 
