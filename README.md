@@ -32,7 +32,7 @@ For a template of what your submission is expected to look like, please check ou
 
 ## 1. Overview
 
-The goal of this lab is to get you familiar with the ROS 2 workflow. You'll have the option to complete the coding segment of this assignment in either Python or C++. However, we highly recommend trying out both, as this will be the easiest assignment to get started with a new language. The workflow in these two languages is slightly different in ROS2, and it's beneficial to understand both.
+The goal of this lab is to get you familiar with the ROS 2 workflow. You can complete the coding segment of this assignment in either Python or C++. Pick one language and write the whole package in it. This is the easiest lab in which to try a new language, and the two workflows differ slightly in ROS 2, so if you want to learn both, redo the nodes in the other language in a separate scratch workspace. The autograder only grades the one `lab1_pkg` you submit.
 
 In this lab, it'll be helpful to read these tutorials if you're stuck:
 
@@ -70,10 +70,9 @@ If you need multiple terminals and you're inside a Docker container, use `tmux`.
 
 ## 4: Creating a Package
 **Deliverable 1**: create a package named `lab1_pkg` in the workspace we created. The package needs to meet these criteria:
-- The package supports both `Python` and `C++`.
-- The package needs to have the `ackermann_msgs` dependency.
-- Both of these can be done by declaring the correct dependencies in `package.xml`.
-- If declared properly, the dependencies could be installed using `rosdep`.
+- The package is written in one language: either `Python` (an `ament_python` package) or `C++` (an `ament_cmake` package). Don't mix the two in one package. The autograder accepts either.
+- The package declares the `ackermann_msgs` dependency in `package.xml`, along with `rclpy` or `rclcpp` for the language you chose.
+- If declared properly, the dependencies can be installed using `rosdep`.
 - Your package folder should be neat. You shouldn't have multiple 'src' folders or unnecessary 'install' or 'build' folders.
 
 ## 5: Creating nodes with publishers and subscribers
